@@ -45,6 +45,7 @@ class SimpleMonthYearPicker {
 
   static Future<DateTime> showMonthYearPickerDialog({
     required BuildContext context,
+    void Function()? onCancelTap,
     TextStyle? titleTextStyle,
     TextStyle? yearTextStyle,
     TextStyle? monthTextStyle,
@@ -142,9 +143,7 @@ class SimpleMonthYearPicker {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           GestureDetector(
-                            onTap: () {
-                              Navigator.pop(context);
-                            },
+                            onTap: onCancelTap,
                             child: Container(
                               height: 30,
                               width: 70,
@@ -236,23 +235,23 @@ class SimpleMonthYearPicker {
                         ),
                         if (!(disableFuture == true &&
                             selectedYear == DateTime.now().year))
-                        IconButton(
-                          onPressed: () {
-                            // DOC: Give user option to disable future years.
-                            if (disableFuture == true &&
-                                selectedYear == DateTime.now().year) {
-                              null;
-                            } else {
-                              setState(() {
-                                selectedYear = selectedYear + 1;
-                              });
-                            }
-                          },
-                          icon: Icon(
-                            Icons.arrow_forward_ios,
-                            size: 10,
-                            color: primaryColor,
-                          ),
+                          IconButton(
+                            onPressed: () {
+                              // DOC: Give user option to disable future years.
+                              if (disableFuture == true &&
+                                  selectedYear == DateTime.now().year) {
+                                null;
+                              } else {
+                                setState(() {
+                                  selectedYear = selectedYear + 1;
+                                });
+                              }
+                            },
+                            icon: Icon(
+                              Icons.arrow_forward_ios,
+                              size: 10,
+                              color: primaryColor,
+                            ),
                           )
                         else
                           SizedBox(
