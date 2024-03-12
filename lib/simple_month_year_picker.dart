@@ -207,7 +207,7 @@ class SimpleMonthYearPicker {
                   ),
                 ),
                 Positioned.fill(
-                  top: 20,
+                  top: 10,
                   child: Align(
                     alignment: Alignment.topRight,
                     child: Row(
