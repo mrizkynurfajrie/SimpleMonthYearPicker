@@ -32,7 +32,8 @@ class MonthContainer extends StatelessWidget {
           month,
           style: textStyle ??
               TextStyle(
-                fontSize: 20,
+                fontSize: 13,
+                fontWeight: FontWeight.w500,
                 color: textColor,
               ),
         ),

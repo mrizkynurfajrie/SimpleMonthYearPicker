@@ -7,14 +7,10 @@ class CustomDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MediaQuery.removeViewInsets(
-      removeLeft: true,
-      removeTop: true,
-      removeRight: true,
-      removeBottom: true,
-      context: context,
-      child: Align(
-        alignment: Alignment.center,
+    return Align(
+      alignment: Alignment.center,
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
         child: ConstrainedBox(
           constraints: const BoxConstraints(minWidth: 70.0),
           child: Material(
