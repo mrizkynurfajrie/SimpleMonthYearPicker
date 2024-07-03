@@ -25,7 +25,7 @@ class MonthContainer extends StatelessWidget {
           color: borderColor,
         ),
         color: fillColor,
-        borderRadius: BorderRadius.circular(5),
+        borderRadius: BorderRadius.circular(90),
       ),
       child: Center(
         child: Text(
@@ -33,7 +33,7 @@ class MonthContainer extends StatelessWidget {
           style: textStyle ??
               TextStyle(
                 fontSize: 13,
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w600,
                 color: textColor,
               ),
         ),

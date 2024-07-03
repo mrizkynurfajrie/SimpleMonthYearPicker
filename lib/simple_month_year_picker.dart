@@ -129,7 +129,7 @@ class SimpleMonthYearPicker {
                                       ? primaryColor
                                       : bgColor,
                                   textColor: index + 1 != selectedMonth
-                                      ? primaryColor
+                                      ? Colors.black
                                       : bgColor,
                                 ),
                               );
@@ -161,7 +161,7 @@ class SimpleMonthYearPicker {
                                   style: TextStyle(
                                     color: Colors.red.shade700,
                                     fontSize: 13,
-                                    fontWeight: FontWeight.w600,
+                                    fontWeight: FontWeight.w700,
                                   ),
                                 ),
                               ),
@@ -196,7 +196,7 @@ class SimpleMonthYearPicker {
                                   style: TextStyle(
                                     color: bgColor,
                                     fontSize: 13,
-                                    fontWeight: FontWeight.w600,
+                                    fontWeight: FontWeight.w700,
                                   ),
                                 ),
                               ),
