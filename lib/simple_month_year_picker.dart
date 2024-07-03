@@ -75,7 +75,7 @@ class SimpleMonthYearPicker {
             child: Stack(
               children: [
                 Container(
-                  height: 210,
+                  height: 260,
                   width: 370,
                   decoration: BoxDecoration(
                     color: bgColor,
@@ -98,6 +98,9 @@ class SimpleMonthYearPicker {
                                 fontWeight: FontWeight.bold,
                               ),
                         ),
+                      ),
+                      SizedBox(
+                        height: 30,
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 30, top: 5),
