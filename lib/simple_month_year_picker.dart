@@ -51,6 +51,7 @@ class SimpleMonthYearPicker {
     TextStyle? monthTextStyle,
     Color? backgroundColor,
     Color? selectionColor,
+    Color textSelectedColor = Colors.white,
     bool? barrierDismissible,
     bool? disableFuture,
   }) async {
@@ -128,7 +129,7 @@ class SimpleMonthYearPicker {
                                       ? primaryColor
                                       : bgColor,
                                   textColor: index + 1 != selectedMonth
-                                      ? primaryColor
+                                      ? textSelectedColor
                                       : bgColor,
                                 ),
                               );
@@ -150,7 +151,7 @@ class SimpleMonthYearPicker {
                               decoration: BoxDecoration(
                                 color: bgColor,
                                 border: Border.all(
-                                  color: primaryColor,
+                                  color: Colors.red.shade900,
                                 ),
                                 borderRadius: BorderRadius.circular(6),
                               ),
@@ -158,7 +159,9 @@ class SimpleMonthYearPicker {
                                 child: Text(
                                   'Cancel',
                                   style: TextStyle(
-                                    color: primaryColor,
+                                    color: Colors.red.shade900,
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w500,
                                   ),
                                 ),
                               ),
@@ -192,6 +195,8 @@ class SimpleMonthYearPicker {
                                   'OK',
                                   style: TextStyle(
                                     color: bgColor,
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w500,
                                   ),
                                 ),
                               ),
