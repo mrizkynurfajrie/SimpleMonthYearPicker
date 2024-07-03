@@ -129,7 +129,7 @@ class SimpleMonthYearPicker {
                                       ? primaryColor
                                       : bgColor,
                                   textColor: index + 1 != selectedMonth
-                                      ? textSelectedColor
+                                      ? primaryColor
                                       : bgColor,
                                 ),
                               );
@@ -151,7 +151,7 @@ class SimpleMonthYearPicker {
                               decoration: BoxDecoration(
                                 color: bgColor,
                                 border: Border.all(
-                                  color: Colors.red.shade900,
+                                  color: Colors.red.shade700,
                                 ),
                                 borderRadius: BorderRadius.circular(6),
                               ),
@@ -159,9 +159,9 @@ class SimpleMonthYearPicker {
                                 child: Text(
                                   'Cancel',
                                   style: TextStyle(
-                                    color: Colors.red.shade900,
+                                    color: Colors.red.shade700,
                                     fontSize: 13,
-                                    fontWeight: FontWeight.w500,
+                                    fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               ),
@@ -196,7 +196,7 @@ class SimpleMonthYearPicker {
                                   style: TextStyle(
                                     color: bgColor,
                                     fontSize: 13,
-                                    fontWeight: FontWeight.w500,
+                                    fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               ),
